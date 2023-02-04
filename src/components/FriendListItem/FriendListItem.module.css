@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.status::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.isOnline::after {
+  background-color: green;
+}
+
+.isOffline::after {
+  background-color: red;
+}
+
+.avatar {
+  width: 100px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #333333;
+}
