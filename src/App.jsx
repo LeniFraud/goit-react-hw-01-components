@@ -1,8 +1,3 @@
-// import { Section } from 'components/Section/Section';
-// import { Profile } from 'components/Profile/Profile';
-// import { Statistics } from 'components/Statistics/Statistics';
-// import { FriendList } from 'components/FriendList/FriendList';
-// import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import {
   Section,
   Profile,
@@ -11,10 +6,10 @@ import {
   TransactionHistory,
 } from 'components';
 
-import user from 'info/user';
-import data from 'info/data';
-import friends from 'info/friends';
-import transactions from 'info/transactions';
+import user from 'data/user';
+import data from 'data/data';
+import friends from 'data/friends';
+import transactions from 'data/transactions';
 
 export const App = () => {
   return (
