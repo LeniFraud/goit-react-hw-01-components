@@ -20,10 +20,7 @@ export const Status = styled.span`
   height: 30px;
   border-radius: 50%;
   background-color: ${({ current }) => {
-    if (!current) {
-      return 'red';
-    }
-    return 'green';
+    return current ? 'green' : 'red';
   }};
 `;
 
