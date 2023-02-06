@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { getRandomRgbColor } from 'utils/getRandomColor';
 import {
   Wrapper,
   Title,
@@ -15,7 +14,7 @@ export const Statistics = ({ title, stats }) => {
       {title && <Title>{title}</Title>}
       <StatList>
         {stats.map(el => (
-          <Stat key={el.id} statColor={getRandomRgbColor()}>
+          <Stat key={el.id}>
             <Label>{el.label}</Label>
             <Percentage>{el.percentage} %</Percentage>
           </Stat>
@@ -34,8 +33,4 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     }).isRequired
   ).isRequired,
-};
-
-Stat.propTypes = {
-  statColor: PropTypes.string.isRequired,
 };

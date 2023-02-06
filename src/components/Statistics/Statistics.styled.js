@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { getRandomRgbColor } from 'utils/getRandomColor';
 
 export const Wrapper = styled.div`
   width: 600px;
@@ -38,7 +39,7 @@ export const Stat = styled.li`
   justify-content: center;
   flex-basis: calc(100% / 5);
   padding: 30px 0;
-  background-color: ${({ statColor }) => statColor};
+  background-color: ${getRandomRgbColor};
 `;
 
 export const Label = styled.span`
